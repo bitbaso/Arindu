@@ -2,6 +2,8 @@
 
 Arindu is an experimental worker service built in C# that facilitates the archiving of old records from specified tables in a source database to a destination database. It helps manage database size by transferring records older than a defined interval to a history database and deleting them from the source database. This configuration-driven service operates based on settings defined in the `appsettings.json` file.
 
+The name **"Arindu"** comes from Euskera (Basque language) and means **"to lighten" or "to relieve,"** and is related to the word **"arin,"** which means **"fast."** This reflects the service's goal of quickly reducing the load on the source database by efficiently archiving outdated data, making the database lighter and more manageable.
+
 ## Features
 
 - **Configurable Table Archiving**: Easily configure which tables to archive by specifying connection strings, table names, schema names, and more in the configuration file.
