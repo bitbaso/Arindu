@@ -38,7 +38,8 @@ public class Worker : BackgroundService
                     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 }
 
-                await _testDataManager.InsertRandomRowsAsync(10000, tablesToHistorify[0].SourceConnectionString);
+                //To add test data at start
+                //await _testDataManager.InsertRandomRowsAsync(10000, tablesToHistorify[0].SourceConnectionString);
 
                 await _historifyManager.ExecuteHistorify(tablesToHistorify);
 
